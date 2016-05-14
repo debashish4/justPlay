@@ -6,7 +6,7 @@
   height: calc(100% - 64px); }
 
 .main {
-  width: 824px;
+  width: calc(100% - 200px);
   float: left;
   height: calc(100% - 64px); }
 
@@ -217,7 +217,7 @@ nav {
   transform: translateY(-50%);
   text-align: center;
   color: #FFFFFf;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   background: rgba(34, 34, 34, 0.38);
   padding: 20px; }
