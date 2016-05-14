@@ -6,7 +6,14 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<title></title>
-	<link rel="stylesheet" href="styles/app.css">
+	<link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/FontAwesome.otf">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.eot">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2">
+
 </head>
 <body ng-app="LayoutApp" ng-cloak>
 
@@ -14,7 +21,5 @@
 </body>
 <script type="text/javascript" src="scripts/libs/jquery-1-12-2-min.js"></script>
 <script type="text/javascript" src="scripts/libs/bootstrap-min.js"></script>
-<script type="text/javascript" src="scripts/libs/bootstrap-select-min.js"></script>
-
 <script type="text/javascript" src="scripts/app.js"></script>
 </html>
