@@ -1,0 +1,42 @@
+.modal-language {
+    top: 25%;
+}
+
+.languageModel {
+    .modal-backdrop {
+        background-color: transparent;
+    }
+    .list-group {
+        margin-bottom: 0;
+        .list-group-item {
+            padding: 7px 15px;
+        }
+        .list-group-item:first-child {
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+        .list-group-item:last-child {
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+    }
+    .lng {
+        width: 30px;
+        display: inline-block;
+        margin: 0 10px;
+        margin-bottom: -7px;
+        overflow: hidden;
+    }
+    .lan-text {
+        font-size: 15px;
+        color: $darker-grey !important;
+        font-weight: normal;
+    }
+    .close-icon {
+        width: 16px;
+        height: 16px;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+footer{
+    position: absolute;
+    bottom: 9px;
+    text-align: center;
+    width: 280px;
+    left: calc(50% - 140px);
+    .copyright{
+    	p{
+	    	font-size: 10px;
+	    	color:$inactive-text;
+    	}	
+    }
+}
+
+
+

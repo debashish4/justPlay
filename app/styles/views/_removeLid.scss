@@ -1,0 +1,474 @@
+// START REMOVE LID
+.inventory-log,
+.remove-lid, .end-shift {
+    .rl-container {
+        height: calc(100vh - 115px);
+        position: relative;
+        background: $info-panel-bg;
+    }
+    // START WIZARD (UPDATE RACK)
+    .title {
+        color: $white;
+        font-size: 19px;
+        float: left;
+        margin: 0 0 0 20px;
+        text-transform: uppercase;
+    }
+    .totalInventory {
+        margin: 25px auto;
+        text-align: center;
+        span {
+            display: inline-block;
+            color: $info-primary-text;
+        }
+        span:first-child {
+            font-size: 14px;
+        }
+        .totalCount {
+            margin-left: 5px;
+            color: $white;
+        }
+    }
+    .wizard {
+        padding-top: 20px;
+        .wizard-steps {
+            max-width: 475px;
+            margin: 0 auto;
+            p {
+                margin: 0!important;
+                position: relative;
+            }
+        }
+        .completion {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-around;
+            span {
+                color: #5F6279;
+            }
+            .task {
+                white-space: nowrap;
+                p {
+                    background-color: $info-panel-bg;
+                }
+                i {
+                    color: #5F6279;
+                }
+                .icon-icon_Next_Wizard {
+                    color: $color-blue1;
+                }
+            }
+        }
+        .completion>span:nth-child(1) {
+            display: none;
+        }
+        .completion > span {
+            width: 100%;
+            display: inline-block;
+            border-bottom: 1px solid #5F6279;
+        }
+        p {
+            color: #DBDBDB;
+            display: inline-block;
+            margin: 0px;
+        }
+        .hover {
+            color: blue;
+            cursor: pointer;
+        }
+        .border-hover {
+            border-bottom: 1px solid blue!important;
+        }
+    }
+    // END WIZARD
+    // SCROLLABLE TABS START
+    .scrtabs-tab-container {
+        height: auto;
+        padding: 0px 15px;
+        float: left;
+        width: 100%;
+        border-bottom: 2px solid $inactive-text;
+        .tab-content {
+            clear: left;
+        }
+    }
+    .tabCarousel {
+        position: relative;
+        z-index: 2;
+        .scrtabs-tabs-fixed-container {
+            float: left;
+            // height: $height55 - 2;
+            overflow: hidden;
+            // width: 91% !important;
+            width: calc(100% - 90px) !important;
+            ul.nav-tabs {
+                // height: $height55;
+                border-bottom: none;
+                & li {
+                    a {
+                        width: 210px;
+                        text-align: center;
+                        border-radius: 0px;
+                        background-color: $tab-bg;
+                        color: $value-text;
+                        border: none;
+                        padding: 6px 15px;
+                        p {
+                            margin: 0px;
+                            font-size: 17px;
+                            .icon-icon_Profit {
+                                color: #1DFF9A;
+                                font-size: 8px;
+                                margin-left: 5px;
+                            }
+                        }
+                        p.tab-title {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .active a {
+                    background-color: $inactive-text;
+                    border: 1px solid $inactive-text;
+                }
+            }
+            ul.nav-tabs>li {
+                white-space: nowrap;
+                margin-bottom: 0px;
+            }
+            ul.nav-tabs>li:last-child {
+                padding-right: 30px;
+            }
+        }
+        .scrtabs-tabs-movable-container {
+            position: relative;
+            .tab-content {
+                display: none;
+            }
+        }
+        .scrtabs-tab-scroll-arrow {
+            color: $grey3;
+            cursor: pointer;
+            float: left;
+            font-size: 12px;
+            // height: $height55;
+            margin-bottom: -1px;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        ul.nav-tabs>li:last-child {
+            padding-right: 30px;
+        }
+        .scrtabs-js-tab-scroll-arrow-left {
+            padding: 19px 30px 19px 0px;
+            float: left;
+            &:hover {
+                text-decoration: none;
+                color: $white1;
+            }
+        }
+        .scrtabs-js-tab-scroll-arrow-right {
+            padding: 19px 0px 19px 30px;
+            float: right;
+            &:hover {
+                text-decoration: none;
+                color: $white1;
+            }
+        }
+        .scrtabs-tab-content-outside-movable-container {
+            .nav-tabs {
+                display: none;
+            }
+        }
+    }
+    // SCROLLABLE TABS END (UPDATE RACK)
+    // BAR CHART START (UPDATE RACK)
+    .barChart {
+        position: relative;
+        border-bottom: 2px solid $inactive-text;
+        padding: 0 50px 0 50px;
+        .column-container {
+            width: 92px;
+            border-right: 1px solid $grey2;
+            display: inline-block;
+            position: relative;
+            &:last-child {
+                border-right: none;
+            }
+            &:first-child {
+                border-left: none;
+            }
+            .info-top,
+            .info-bottom {
+                text-align: center;
+                color: $value-text;
+                p {
+                    margin: 5px 0 5px;
+                    cursor: pointer;
+                }
+            }
+            .info-top {
+                min-height: 70px;
+                .amount {
+                    width: 70%;
+                    margin: 0 auto;
+                    border-bottom: 1px solid $grey2;
+                    padding: 2px 0px;
+                }
+                .chips {
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 2px 0px;
+                }
+            }
+            .info-bottom {
+                padding: 0 0 7px 0;
+                color: $inactive-text;
+            }
+            .graphicColumn {
+                height: auto;
+                padding: 4px;
+                padding-top: 22px;
+                min-width: 50px;
+                border-top: 1px solid $grey2;
+                border-bottom: none;
+                border-left: none;
+                vertical-align: bottom;
+                .column {
+                    width: 45px;
+                    margin: 0 auto 3px auto;
+                    height: 2px;
+                    border-radius: 10px;
+                    background: #51535f;
+                }
+            }
+            .overlay-container {
+                background-color: transparent;
+                width: 92px;
+                -webkit-transition: width 0.2s ease, background-color 0.2s ease;
+                -moz-transition: width 0.2s ease, background-color 0.2s ease;
+                -o-transition: width 0.2s ease, background-color 0.2s ease;
+                -ms-transition: width 0.2s ease, background-color 0.2s ease;
+                transition: transform 0.2s ease, background-color 0.2s ease;
+                .info-top {
+                    .decrease-value,
+                    .increase-value {
+                        position: absolute;
+                        z-index: 999;
+                        color: $dark-grey1;
+                        width: 30px;
+                        height: 30px;
+                        top: 3px;
+                        background: $grey4;
+                        border-radius: 50px;
+                        display: table;
+                        cursor: pointer;
+                        i {
+                            display: table-cell;
+                            vertical-align: middle;
+                            font-size: 12px;
+                        }
+                    }
+                    input {
+                        font-size: 14px;
+                        padding: 0px 0px;
+                        text-align: center;
+                        border-radius: 50px;
+                        border: none;
+                        line-height: 35px;
+                        width: 100%;
+                        &:focus {
+                            outline: 1px solid transparent;
+                        }
+                    }
+                    .amount-edit {
+                        margin: 5px 10px;
+                        position: relative;
+                        input {
+                            background-color: $value-text;
+                            color: $info-panel-bg;
+                        }
+                        .decrease-value {
+                            left: 3px;
+                        }
+                        .increase-value {
+                            right: 3px;
+                        }
+                        .decrease-value,
+                        .increase-value {
+                            i {
+                                color: $dark-grey1;
+                            }
+                        }
+                    }
+                    .chips-edit {
+                        position: relative;
+                        margin: 5px 10px;
+                        input {
+                            background-color: $tab-bg;
+                            color: $value-text;
+                        }
+                        .decrease-value {
+                            left: 3px;
+                            background: transparent;
+                        }
+                        .increase-value {
+                            right: 3px;
+                            background: transparent;
+                        }
+                        .decrease-value,
+                        .increase-value {
+                            i {
+                                color: $value-text;
+                            }
+                        }
+                    }
+                }
+            }
+            .overlay-panel {
+                width: 210px;
+                box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.82);
+                border-right: none;
+                height: 415px;
+                position: absolute;
+                background-color: #363845;
+                z-index: 9;
+                bottom: -11px;
+                left: -14px;
+                transform: scale(0.99, 0.99);
+                .graphicColumn {
+                    padding-top: 15px;
+                    border-top: none;
+                }
+            }
+        }
+        .chart-container {
+            height: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            width: 100%;
+            .dollar {
+                font-size: 14px;
+                position: absolute;
+                left: 12px;
+                span {
+                    margin: 9px 0;
+                    display: block;
+                    a {
+                        color: $inactive-text;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .reset {
+                font-size: 14px;
+                position: absolute;
+                right: 12px;
+                span {
+                        margin: 9px 0;
+                        display: table;
+                        width: 25px;
+                        height: 25px;
+                        background: $tab-bg;
+                        border-radius: 50px;
+                        text-align: center;
+                    a {
+                        color: $inactive-text;
+                        text-decoration: none;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        button {
+            background: transparent;
+            border: none;
+            color: #DF1E25;
+            cursor: pointer;
+            font-size: 1.4em;
+            height: 40px;
+            opacity: .5;
+            outline: none;
+            width: 40px;
+        }
+        button:hover {
+            opacity: 1;
+        }
+    }
+    // BAR CHART END (UPDATE RACK)
+    // INPUT CONTAINER START (SECONDARY AUTHORIZATION)
+    .middle-container {
+        position: relative;
+        top: 30%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        .sec-auth {
+            max-width: 390px;
+            margin: 0 auto;
+            position: relative;
+            .sec-auth-container {
+                padding: 51px;
+                float: left;
+            }
+        }
+    }
+    // INPUT CONTAINER (SECONDARY AUTHORIZATION)
+    // CARD SWIPE START
+    .cardSwipe {
+        left: 50%;
+        width: 280px;
+        margin-left: -140px;
+        bottom: 50px;
+        position: absolute;
+        font-size: 14px;
+        color: $light-grey1;
+        text-align: center;
+        // padding-top: 70px;
+        span {
+            display: block;
+            i {
+                font-size: 50px;
+            }
+        }
+    }
+    // CARD SWIPE END
+    // ACTION BUTTON START
+    .action-bar {
+        position: absolute;
+        bottom: 10px;
+        width: calc(100% - 20px);
+        left: 10px;
+        right: 10px;
+    }
+    // ACTION BUTTON END
+    // SUMMARY TABLE START
+    .summary {
+        position: relative;
+    }
+    // SUMMARY TABLE END
+    // commentModel
+
+                .comment-txtarea {
+                width: 100%;
+                height: 160px;
+                border: none;
+                background: #fff;
+                border-radius: 3px;
+                padding: 10px 14px;
+            }
+}
+
+// END REMOVE LID
+div.modal div.modal-backdrop {
+    z-index: 0!important;
+}
+body.modal-open div.modal-backdrop { z-index: 0!important; }
+.modal{
+    -webkit-transform: translateZ(0)!important;
+    transform: translateZ(0)!important;
+}

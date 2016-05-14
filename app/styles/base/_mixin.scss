@@ -1,0 +1,21 @@
+
+/* VERTICALLY ALIGN THE DIV */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Border Radius */
+
+/* Border radius */
+
+// @mixin border-radius($radius) {
+//   border-radius: $radius;
+//   -webkit-border-radius: $radius;
+//   -moz-border-radius: $radius;
+//   -ms-border-radius: $radius;
+//   -o-border-radius: $radius;
+// }

@@ -1,0 +1,384 @@
+    // INHERTING FROM REMOVE LID TABLE SUMMARY CSS
+    // START INVENTORY LOG
+    .inventory-log, .end-shift {
+        .totalInventory {
+            margin: 0 auto;
+            width: 70%;
+        }
+        .tabular {
+            .table-container {
+                height: 100%;
+                overflow-x: scroll;
+                overflow-y: scroll;
+                white-space: nowrap;
+                clear:both;
+                .table-scrollable {
+                    position: relative;
+                    margin: 0px 20px;
+                    .table-body {
+                        position: relative;
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                        width: auto;
+                        height: calc(100vh - 300px);
+                        table {
+                            margin-bottom: 420px;
+                        }
+                    }
+                }
+                table {
+                    border-bottom: none;
+                    margin-bottom: 0px;
+                    position: relative;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    table-layout: fixed;
+                    white-space: nowrap;
+                    thead {
+                        tr {
+                            th {
+                                span {
+                                    font-size: 5px;
+                                    display: inline-block;
+                                    margin-top: 5px;
+                                    a {
+                                        color: $light-grey1;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                            th:last-child {
+                                padding: 12.5px 33px 12.5px 10px;
+                            }
+                        }
+                    }
+                    tbody tr td {
+                        padding: 16px 10px;
+                        &:first-child {
+                            padding-left: 33px;
+                        }
+                    }
+                    tbody {
+                        overflow: hidden;
+                    }
+                    tr {
+                        td:nth-child(-n+2) {
+                            color: $light-grey1;
+                        }
+                        td {
+                            min-width: 150px;
+                        }
+                    }
+                    .active {
+                        background-color: $tab-bg;
+                        border-left: 3px solid $color-blue1;
+                        > td {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        #prevThumb,
+        #nextThumb {
+            top: 40px;
+            height: calc(100% - 41px);
+            display: flex;
+            align-items: center;
+            width: 20px;
+            justify-content: center;
+            z-index: 10;
+            &:hover {
+                text-decoration: none;
+                color: $white1;
+            }
+        }
+        #prevThumb {
+            left: 0px;
+        }
+        #nextThumb {
+            right: -1px;
+        }
+        // FILTERS START
+        .filters {
+            width: calc(100% - 40px);
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 18px;
+            margin-top: 39px;
+            border: 1px solid $inactive-text;
+            border-radius: 5px;
+            height: 40px;
+            p {
+                font-size: 12px;
+                vertical-align: middle;
+                text-align: left;
+                display: inline-block;
+                padding: 10px;
+                color: $value-text;
+                border-right: 1px solid $light-grey1;
+                white-space: nowrap;
+                height: 38px;
+                span {
+                    display: inline-block;
+                }
+            }
+            .filter-ico {
+                width: 3.2%;
+                color: $inactive-text;
+            }
+            .calender {
+                width: 21.5%;
+            }
+            .time {
+                width: 13.5%;
+            }
+            .transaction-log {
+                width: 17%;
+                .checkbox-filter {
+                    label {
+                        font-weight: normal;
+                    }
+                }
+                input[type="checkbox"].styled:checked + label:after {
+                    font-family: 'bally_icons' !important;
+                    content: "\e931";
+                    color: $lighter-grey;
+                    font-size: 8px;
+                    left: -18px;
+                    top: 3px;
+                }
+            }
+            .transaction-type {
+                width: 21.5%;
+                padding: 5px;
+                position: relative;
+                .icon-type {
+                    position: absolute;
+                    top: 13px;
+                    left: -3px;
+                }
+                .custom-dropdown {
+                    width: 100%;
+                }
+            }
+            #nextThumb {
+                right: -1px;
+            }
+            .ico {
+                padding: 0 10px;
+            }
+            .reset-ico {
+                width: 3%;
+                border: none;
+                padding: 6px;
+                .reset-circle{
+                    width:25px;
+                    height:25px;
+                    background-color:$tab-bg;
+                    display: block;
+                    padding: 5px 7px;
+                    border-radius: 50px;
+                    color:$value-text;
+                }
+            }
+            .chips {
+                width: 17%;
+                padding: 5px;
+                position: relative;
+                .icon-type {
+                    position: absolute;
+                    top: 13px;
+                    left: -3px;
+                }
+                .custom-dropdown {
+                    width: 100%;
+                }
+            }
+            .btn-group.open .dropdown-toggle {
+                box-shadow: none;
+            }
+            .bootstrap-select {
+                span {
+                    font-size: 12px
+                }
+                .transaction-type {
+                    width: 21.5%;
+                    padding: 5px;
+                }
+                .btn {
+                    padding: 5px 0;
+                }
+                .btn-default {
+                    color: $value-text;
+                    background-color: transparent;
+                    border: none;
+                }
+                .btn-group.open .dropdown-toggle {
+                    box-shadow: none;
+                }
+                .caret {
+                    border: none;
+                    font-size: 8px;
+                    font-family: 'bally_icons' !important;
+                    color: $grey5;
+                }
+                .caret:before {
+                    content: "\e90f";
+                }
+                .dropdown-toggle {
+                    .filter-option {
+                        padding-left: 30px;
+                    }
+                }
+                .dropdown-menu {
+                    left: -10px;
+                    border-radius: 0px 0px 3px 3px;
+                    background-color: $value-text;
+                    padding: 0px 0;
+                    top: 31px;
+                    li {
+                        height: 43px;
+                        width: 100%;
+                        border-bottom: 1px solid #DBDBDB;
+                        a {
+                            display: inline-block;
+                            height: 100%;
+                            width: 100%;
+                            span {
+                                margin-top: 10px;
+                                font-size: 14px;
+                            }
+                        }
+                        a:focus {
+                            outline: thin dotted;
+                            outline: 0px auto transparent;
+                            outline-offset: 0px;
+                        }
+                    }
+                }
+                .open {
+                    width: 108%;
+                }
+            }
+            .bootstrap-select .dropdown-toggle:focus {
+                outline: none !important;
+                outline: 0 auto transparent !important;
+                outline-color: none!important;
+                outline-offset: -2px;
+                .btn:active,
+                .btn.active {
+                    box-shadow: none;
+                }
+                .btn-group.open .dropdown-toggle {
+                    box-shadow: none!important;
+                }
+                .caret {
+                    border: none;
+                    font-size: 8px;
+                    font-family: 'bally_icons' !important;
+                }
+                .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+                    width: 88%;
+                }
+            }
+            .bootstrap-select.btn-group .dropdown-toggle .caret {
+                top: 12px;
+                right: 20px;
+            }
+        }
+        // FILTERS END
+        //  INVENTORY-LOG-DETAILS
+        .inventory-log-details {
+            max-width: 500px;
+            width: 100%;
+            background-color: $tab-bg;
+            height: 420px;
+            position: absolute;
+            top: 90px;
+            right: 20px;
+            box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.2);
+            padding: 0px 15px 12px 15px;
+            color: $value-text;
+            display: none;
+            .inventory-log-wrapper {
+                border-top: 2px solid lighten($info-panel-bg, 10%);
+                padding-top: 12px;
+                padding-left: 25px;
+                .title-details {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+                .chip-set {
+                    float: right;
+                    font-size: 11px;
+                    padding-right: 20px;
+                    span {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        margin-left: 5px;
+                    }
+                }
+                .close-detail-view {
+                    font-size: 11px;
+                    float: right;
+                    a {
+                        color: $value-text;
+                        line-height: 20px;
+                    }
+                }
+                .detail-content {
+                    padding-right: 30px;
+                    .sub-heaading-detailView {
+                        padding: 10px 0px;
+                        font-size: 12px;
+                    }
+                    .sub-content-detailView {
+                        padding: 5px 0px;
+                        font-size: 14px;
+                        .chip-rect {
+                            font-size: 12px;
+                            width: 27px;
+                            display: inline-block;
+                            text-align: center;
+                            margin-right: 7px;
+                        }
+                        .chip-circle {
+                            font-size: 18px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            text-align: center;
+                            margin-right: 11px;
+                            margin-left: 2px;
+                            position: relative;
+                            top: 3px;
+                            i {
+                                position: relative;
+                                top: -1px;
+                            }
+                        }
+                    }
+                    .detail-comment {
+                        padding-top: 20px;
+                        white-space: normal;
+                        span {
+                            display: block;
+                            font-size: 12px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .detail-button{
+                    margin-top: 20px;
+                    .btn-sm{
+                            padding: 6px 20px;
+                    }
+            }
+        } // INVENTORY LOG DETAIL
+    }
+    /* END INVENTORY LOG */

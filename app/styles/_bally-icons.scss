@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'bally_icons';
+    src:    url('fonts/ballyIcons/bally_icons.eot?utl4pa');
+    src:    url('fonts/ballyIcons/bally_icons.eot?utl4pa#iefix') format('embedded-opentype'),
+        url('fonts/ballyIcons/bally_icons.ttf?utl4pa') format('truetype'),
+        url('fonts/ballyIcons/bally_icons.woff?utl4pa') format('woff'),
+        url('fonts/ballyIcons/bally_icons.svg?utl4pa#bally_icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'bally_icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-icon_MaxChips:before {
+    content: "\e932";
+}
+.icon-icon_MinimumChips:before {
+    content: "\e933";
+}
+.icon-icon_Rating:before {
+    content: "\e930";
+}
+.icon-icon_Check:before {
+    content: "\e931";
+}
+.icon-icon_Filter:before {
+    content: "\e92f";
+}
+.icon-icon_IssueComp:before {
+    content: "\e900";
+}
+.icon-icon_Pay:before {
+    content: "\e92a";
+}
+.icon-icon_PostRating:before {
+    content: "\e92b";
+}
+.icon-icon_PrintMarker:before {
+    content: "\e92c";
+}
+.icon-icon_Transfer:before {
+    content: "\e92d";
+}
+.icon-icon_PostRating2:before {
+    content: "\e92e";
+}
+.icon-icon_Active:before {
+    content: "\e901";
+}
+.icon-icon_Alert2:before {
+    content: "\e902";
+}
+.icon-icon_Calc:before {
+    content: "\e903";
+}
+.icon-icon_Calendar:before {
+    content: "\e904";
+}
+.icon-icon_CashDrop:before {
+    content: "\e905";
+}
+.icon-icon_Cashless:before {
+    content: "\e906";
+}
+.icon-icon_Chips:before {
+    content: "\e907";
+}
+.icon-icon_ChipsCardLayer:before {
+    content: "\e908";
+}
+.icon-icon_ChipsLayer:before {
+    content: "\e909";
+}
+.icon-icon_Clear:before {
+    content: "\e90a";
+}
+.icon-icon_Close:before {
+    content: "\e90b";
+}
+.icon-icon_Dealer_Login:before {
+    content: "\e90c";
+}
+.icon-icon_Dealer_Logout:before {
+    content: "\e90d";
+}
+.icon-icon_Dollar:before {
+    content: "\e90e";
+}
+.icon-icon_Dropdown:before {
+    content: "\e90f";
+}
+.icon-icon_Help:before {
+    content: "\e910";
+}
+.icon-icon_Host:before {
+    content: "\e911";
+}
+.icon-icon_Housekeeping:before {
+    content: "\e912";
+}
+.icon-icon_IncreaseValue:before {
+    content: "\e913";
+}
+.icon-icon_Language:before {
+    content: "\e914";
+}
+.icon-icon_LeftNavigation:before {
+    content: "\e915";
+}
+.icon-icon_Loader:before {
+    content: "\e916";
+}
+.icon-icon_Loss:before {
+    content: "\e917";
+}
+.icon-icon_Massage:before {
+    content: "\e918";
+}
+.icon-icon_Menu:before {
+    content: "\e919";
+}
+.icon-icon_MinMaxBet:before {
+    content: "\e91a";
+}
+.icon-icon_Next_Wizard:before {
+    content: "\e91b";
+}
+.icon-icon_Notifications:before {
+    content: "\e91c";
+}
+.icon-icon_Profit:before {
+    content: "\e91d";
+}
+.icon-icon_ReduceValue:before {
+    content: "\e91e";
+}
+.icon-icon_ReplaceLid:before {
+    content: "\e91f";
+}
+.icon-icon_Reset:before {
+    content: "\e920";
+}
+.icon-icon_RightNavigation:before {
+    content: "\e921";
+}
+.icon-icon_RundownInventory:before {
+    content: "\e922";
+}
+.icon-icon_Success:before {
+    content: "\e923";
+}
+.icon-icon_surveillance:before {
+    content: "\e924";
+}
+.icon-icon_SwipeCard:before {
+    content: "\e925";
+}
+.icon-icon_TableInventory:before {
+    content: "\e926";
+}
+.icon-icon_Time:before {
+    content: "\e927";
+}
+.icon-icon_TransactionTypes:before {
+    content: "\e928";
+}
+.icon-icon_User:before {
+    content: "\e929";
+}
