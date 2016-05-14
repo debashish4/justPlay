@@ -5,44 +5,8 @@
 @import "views";
 @import "materialize";
 
-/* Regular */
-
-// @font-face {
-//    font-family: 'OpenSans-Regular';
-//    src: url('fonts/opensans/OpenSans-Regular.ttf');
-//    font-weight: normal;
-//    font-style: normal;
-// }
-
-/* Light */ 
- 
-// @font-face {   
-//    font-family: 'OpenSans-Light';
-//    src: url('fonts/opensans/OpenSans-Light.ttf');
-//    font-weight: lighter;
-//    font-style: normal;
-// }
-// 
-/* BOLD */
-
-// @font-face {
-//    font-family: 'OpenSans-Bold';
-//    src: url('fonts/opensans/OpenSans-Bold.ttf');
-//    font-weight: bold;
-//    font-style: normal;
-// }
-
-/* SEMI BOLD */
-
-// @font-face {
-//    font-family: 'OpenSans-Semibold';
-//    src: url('fonts/opensans/OpenSans-Semibold.ttf');
-//    font-weight: 600;
-//    font-style: normal;
-// }
-
-
-
 body{
-   background: blue!important;
+   background: #fff;
+   font-family: "Roboto", Georgia, Serif;
+   font-weight: normal;
 }

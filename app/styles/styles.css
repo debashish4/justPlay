@@ -11824,11 +11824,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
-/* Regular */
-/* Light */
-/* BOLD */
-/* SEMI BOLD */
 body {
-  background: blue !important; }
+  background: #fff;
+  font-family: "Roboto", Georgia, Serif;
+  font-weight: normal; }
 
 /*# sourceMappingURL=maps/styles.css.map */
