@@ -2,9 +2,58 @@
 
 
 {% block content %} 
-<div class="container">
-	<h1>Pages</h1>
-	<h5><a href="login.html" target="_blank">Loader</a></h5>
+<div class="wrapper">
+	<div class="brand-logo clearfix">
+	<p><img src="images/jp.png" alt=""></p>
+</div>
+
+<div id="menu" class="navbar clearfix">	
+
+					<ul>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="fa fa-map-marker"></i>
+								</span>
+								<span>Venue</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"> 
+									<i aria-hidden="true" class="fa fa-calendar"></i>
+								</span>
+								<span>Events</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="fa fa-user-plus"></i>
+								</span>
+								<span>Find Buddy</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="fa fa-thumbs-up"></i>
+								</span>
+								<span>Popular</span>
+							</a>
+						</li>
+						
+					</ul>
+</div>
+
+
+<div class="main ">
+	
+			
+</div>
+
+
+
 
 </div>
 	
