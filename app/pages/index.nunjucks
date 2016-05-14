@@ -3,60 +3,63 @@
 
 {% block content %} 
 <div class="wrapper">
-	<div class="brand-logo clearfix">
-	<p><img src="images/jp.png" alt=""></p>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper clearfix ">
+                <a href=" " class="brand-logo center ">
+                    <img src="images/jp.png " alt="Just Play ">
+                </a>
+                <div class="right ">
+                    <ul>
+                        <li><a href=" ">Login</a></li>
+                        <li><a href=" ">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="menu" class="navbar clearfix ">
+        <ul>
+            <li>
+                <a href="# ">
+                    <span class="icon ">
+                    <i aria-hidden="true " class="fa fa-map-marker "></i>
+                </span>
+                    <span>Venue</span>
+                </a>
+            </li>
+            <li>
+                <a href="# ">
+                    <span class="icon "> 
+                    <i aria-hidden="true " class="fa fa-calendar "></i>
+                </span>
+                    <span>Events</span>
+                </a>
+            </li>
+            <li>
+                <a href="# ">
+                    <span class="icon ">
+                    <i aria-hidden="true " class="fa fa-user-plus "></i>
+                </span>
+                    <span>Find Buddy</span>
+                </a>
+            </li>
+            <li>
+                <a href="# ">
+                    <span class="icon ">
+                    <i aria-hidden="true " class="fa fa-thumbs-up "></i>
+                </span>
+                    <span>Popular</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main ">
+        <div class="default-page">
+            <h1>Just Play</h1>
+            <h4>Lorem Ipsum is simply dummy</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+        </div>
+    </div>
 </div>
-
-<div id="menu" class="navbar clearfix">	
-
-					<ul>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="fa fa-map-marker"></i>
-								</span>
-								<span>Venue</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon"> 
-									<i aria-hidden="true" class="fa fa-calendar"></i>
-								</span>
-								<span>Events</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="fa fa-user-plus"></i>
-								</span>
-								<span>Find Buddy</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="fa fa-thumbs-up"></i>
-								</span>
-								<span>Popular</span>
-							</a>
-						</li>
-						
-					</ul>
-</div>
-
-
-<div class="main ">
-	
-			
-</div>
-
-
-
-
-</div>
-	
-
-
 {% endblock %}

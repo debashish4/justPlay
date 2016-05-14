@@ -13,12 +13,11 @@ body {
 }
 
 body {
-    background: url('../images/bg-pattern.png') repeat;
-    font-family: "OpenSans-Regular", Georgia, Serif;
+    background: url("../images/bg.png") no-repeat;
+    font-family: "Roboto", Georgia, Serif;
     font-weight: normal;
-    .main-container {
-        height: 100%;
-    }
+    background-size: cover;
+    background-position: center;
 }
 
 * {
@@ -27,14 +26,25 @@ body {
     box-sizing: border-box;
 }
 
-.wrapper{
-        border: 1px solid black;
-            height: 100vh;
+.wrapper {
+    height: 100vh;
 }
 
-.brand-logo p{
-    width: 120px;
-    img{
-        width: 100%;
+nav {
+    background-color: #f5f5f5 !important;
+    .brand-logo {
+        width: 65px;
+        margin-top: 8px;
+        height: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    ul{
+        li{
+            a{
+                color:#007095 !important;
+            }
+        }
     }
 }

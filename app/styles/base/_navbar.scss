@@ -3,12 +3,12 @@
 #menu{	
     width: 200px;
     float: left;
-        height: 100%;
+    height: calc(100% - 64px);
 }
 .main{
 	width:824px;
     float: left;
-    height: 100%;
+    height: calc(100% - 64px);
 }
 
 
@@ -44,7 +44,6 @@
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-
 
 /* Remove the blue Webkit background when element is tapped */
 
@@ -155,12 +154,12 @@ button {
     }
     /* Animating the height of the element*/
     .navbar a {
-        height: 9em;
+        height: 100%;
     }
 
     /* Making the text follow the height animation */
     .no-touch .navbar a:hover .icon + span {
-        margin-top: 3.2em;
+        margin-top: 2em;
         -webkit-transition: margin .5s;
         -moz-transition: margin .5s;
         -o-transition: margin .5s;

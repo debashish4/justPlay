@@ -3,12 +3,12 @@
 #menu {
   width: 200px;
   float: left;
-  height: 100%; }
+  height: calc(100% - 64px); }
 
 .main {
   width: 824px;
   float: left;
-  height: 100%; }
+  height: calc(100% - 64px); }
 
 .navbar ul {
   height: 100%;
@@ -122,10 +122,10 @@ button {
     transition: margin .5s; }
   /* Animating the height of the element*/
   .navbar a {
-    height: 9em; }
+    height: 100%; }
   /* Making the text follow the height animation */
   .no-touch .navbar a:hover .icon + span {
-    margin-top: 3.2em;
+    margin-top: 2em;
     -webkit-transition: margin .5s;
     -moz-transition: margin .5s;
     -o-transition: margin .5s;
@@ -184,11 +184,11 @@ body {
   height: 100%; }
 
 body {
-  background: url("../images/bg-pattern.png") repeat;
-  font-family: "OpenSans-Regular", Georgia, Serif;
-  font-weight: normal; }
-  body .main-container {
-    height: 100%; }
+  background: url("../images/bg.png") no-repeat;
+  font-family: "Roboto", Georgia, Serif;
+  font-weight: normal;
+  background-size: cover;
+  background-position: center; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -196,13 +196,31 @@ body {
   box-sizing: border-box; }
 
 .wrapper {
-  border: 1px solid black;
   height: 100vh; }
 
-.brand-logo p {
-  width: 120px; }
-  .brand-logo p img {
-    width: 100%; }
+nav {
+  background-color: #f5f5f5 !important; }
+  nav .brand-logo {
+    width: 65px;
+    margin-top: 8px;
+    height: 100%; }
+    nav .brand-logo img {
+      width: 100%; }
+  nav ul li a {
+    color: #007095 !important; }
+
+.default-page {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  color: #FFFFFf;
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(34, 34, 34, 0.38);
+  padding: 20px; }
 
 .materialize-red {
   background-color: #e51c23 !important; }
@@ -6378,10 +6396,5 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-
-body {
-  background: #fff;
-  font-family: "Roboto", Georgia, Serif;
-  font-weight: normal; }
 
 /*# sourceMappingURL=maps/styles.css.map */
