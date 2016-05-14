@@ -88,6 +88,9 @@ button {
   float: left;
   height: calc(100% - 64px); }
 
+.nav-wrapper {
+  background: #F16B48; }
+
 /* VERTICALLY ALIGN THE DIV */
 /* Border Radius */
 /* Border radius */
@@ -103,11 +106,9 @@ body {
   height: 100%; }
 
 body {
-  background: url("../images/bg.jpg") no-repeat;
+  background: url("../images/cream_pixels.png") repeat;
   font-family: "Roboto", Georgia, Serif;
-  font-weight: normal;
-  background-size: cover;
-  filter: blur(5px); }
+  font-weight: normal; }
 
 * {
   -webkit-box-sizing: border-box;
