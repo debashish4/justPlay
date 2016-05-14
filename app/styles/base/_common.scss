@@ -13,6 +13,7 @@ body {
 }
 
 body {
+    background: url('../images/bg-pattern.png') repeat;
     font-family: "OpenSans-Regular", Georgia, Serif;
     font-weight: normal;
     .main-container {
@@ -26,3 +27,14 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper{
+        border: 1px solid black;
+            height: 100vh;
+}
+
+.brand-logo p{
+    width: 120px;
+    img{
+        width: 100%;
+    }
+}

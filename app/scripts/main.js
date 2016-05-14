@@ -17,12 +17,7 @@
 // })();
 
 (function() {
-    angular.module('LayoutApp', ['ngAnimate', 'ui.bootstrap', 'mj.scrollingTabs']);
-
-
-
-
-
+   
 
     
 })();
