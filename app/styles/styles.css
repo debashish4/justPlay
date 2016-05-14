@@ -90,6 +90,8 @@ button {
 
 .nav-wrapper {
   background: #F16B48; }
+  .nav-wrapper .register a {
+    color: #fff; }
 
 /* VERTICALLY ALIGN THE DIV */
 /* Border Radius */
@@ -127,7 +129,7 @@ nav {
     nav .brand-logo img {
       width: 100%; }
   nav ul li a {
-    color: #007095 !important; }
+    color: #007095; }
 
 .default-page {
   position: relative;

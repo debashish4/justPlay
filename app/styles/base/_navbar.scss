@@ -4,7 +4,7 @@
 .navbar {
     width: 200px;
     float: left;
-    box-shadow: 11px 3px 28px -10px rgba(0,0,0,0.5);
+    box-shadow: 11px 3px 28px -10px rgba(0, 0, 0, 0.5);
     height: calc(100% - 64px);
     ul {
         font-size: 1.1em;
@@ -56,15 +56,13 @@
         transition: box-shadow .6s ease-in-out;
     }
 }
+
 // END NAVBAR
-
-
 .navbar li a:hover,
 .navbar li a:active,
 .navbar li a:focus {
     border-bottom: 4px solid #A73C28;
 }
-
 
 a,
 button {
@@ -116,9 +114,12 @@ button {
     height: calc(100% - 64px);
 }
 
-
 //-------------------------- TOP NAV-------------------
-
-.nav-wrapper{
+.nav-wrapper {
     background: #F16B48;
+    .register {
+        a {
+            color: #fff;
+        }
+    }
 }
