@@ -1,139 +1,41 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
 /* Global CSS that are applied for all screen sizes */
-#menu {
+.navbar {
   width: 200px;
   float: left;
+  box-shadow: 11px 3px 28px -10px rgba(0, 0, 0, 0.5);
   height: calc(100% - 64px); }
-
-.main {
-  width: calc(100% - 200px);
-  float: left;
-  height: calc(100% - 64px); }
-
-.navbar ul {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 1.5em;
-  font-weight: 300; }
-
-.navbar li span {
-  display: block; }
-
-.navbar a {
-  display: block;
-  color: rgba(249, 249, 249, 0.9);
-  text-decoration: none;
-  -webkit-transition: color .5s, background .5s, height .5s;
-  -moz-transition: color .5s, background .5s, height .5s;
-  -o-transition: color .5s, background .5s, height .5s;
-  -ms-transition: color .5s, background .5s, height .5s;
-  transition: color .5s, background .5s, height .5s; }
-
-.navbar i {
-  /* Make the font smoother for Chrome */
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-/* Remove the blue Webkit background when element is tapped */
-a,
-button {
-  -webkit-tap-highlight-color: transparent; }
-
-/* Hover effect for the whole navigation to make the hovered item stand out */
-.no-touch .navbar ul:hover a {
-  color: rgba(249, 249, 249, 0.5); }
-
-.no-touch .navbar ul:hover a:hover {
-  color: rgba(249, 249, 249, 0.99); }
-
-/* Adding some background color to the different menu items */
-.navbar li:nth-child(6n+1) {
-  background: #d06503; }
-
-.navbar li:nth-child(6n+2) {
-  background: #e9931a; }
-
-.navbar li:nth-child(6n+3) {
-  background: #1691be; }
-
-.navbar li:nth-child(6n+4) {
-  background: #166ba2; }
-
-.navbar li:nth-child(6n+5) {
-  background: #1b3647; }
-
-.navbar li:nth-child(6n+6) {
-  background: #152836; }
-
-/* For screen bigger than 800px */
-@media (min-width: 50em) {
-  /* Transforms the list into a horizontal navigation */
-  .navbar li {
-    width: 200px;
-    height: 25%;
-    text-align: center;
-    -webkit-transition: border .5s;
-    -moz-transition: border .5s;
-    -o-transition: border .5s;
-    -ms-transition: border .5s;
-    transition: border .5s; }
+  .navbar ul {
+    font-size: 1.1em;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 300; }
+    .navbar ul li span {
+      display: block; }
+    .navbar ul li {
+      background: #383B44;
+      width: 200px;
+      height: 25%;
+      text-align: center;
+      transition: border .5s; }
+      .navbar ul li a {
+        height: 100%; }
+        .navbar ul li a:hover {
+          background: #E9543B;
+          border-bottom: 4px solid #A73C28; }
   .navbar a {
+    width: auto;
     display: block;
-    width: auto; }
-  /* hover, focused and active effects that add a little colored border to the different items */
-  .no-touch .navbar li:nth-child(6n+1) a:hover,
-  .no-touch .navbar li:nth-child(6n+1) a:active,
-  .no-touch .navbar li:nth-child(6n+1) a:focus {
-    border-bottom: 4px solid #ae4e01; }
-  .no-touch .navbar li:nth-child(6n+2) a:hover,
-  .no-touch .navbar li:nth-child(6n+2) a:active,
-  .no-touch .navbar li:nth-child(6n+2) a:focus {
-    border-bottom: 4px solid #bf7514; }
-  .no-touch .navbar li:nth-child(6n+3) a:hover,
-  .no-touch .navbar li:nth-child(6n+3) a:active,
-  .no-touch .navbar li:nth-child(6n+3) a:focus {
-    border-bottom: 4px solid #0c6e95; }
-  .no-touch .navbar li:nth-child(6n+4) a:hover,
-  .no-touch .navbar li:nth-child(6n+4) a:active,
-  .no-touch .navbar li:nth-child(6n+4) a:focus {
-    border-bottom: 4px solid #0a4b75; }
-  .no-touch .navbar li:nth-child(6n+5) a:hover,
-  .no-touch .navbar li:nth-child(6n+5) a:active,
-  .no-touch .navbar li:nth-child(6n+5) a:focus {
-    border-bottom: 4px solid #10222c; }
-  .no-touch .navbar li:nth-child(6n+6) a:hover,
-  .no-touch .navbar li:nth-child(6n+6) a:active,
-  .no-touch .navbar li:nth-child(6n+6) a:focus {
-    border-bottom: 4px solid #091219; }
-  /* Placing the icon */
-  .icon {
-    padding-top: 1.4em; }
-  .icon + span {
-    margin-top: 2.1em;
-    -webkit-transition: margin .5s;
-    -moz-transition: margin .5s;
-    -o-transition: margin .5s;
-    -ms-transition: margin .5s;
-    transition: margin .5s; }
-  /* Animating the height of the element*/
-  .navbar a {
-    height: 100%; }
-  /* Making the text follow the height animation */
-  .no-touch .navbar a:hover .icon + span {
-    margin-top: 2em;
-    -webkit-transition: margin .5s;
-    -moz-transition: margin .5s;
-    -o-transition: margin .5s;
-    -ms-transition: margin .5s;
-    transition: margin .5s; }
-  /* Positioning the icons and preparing for the animation*/
+    color: #232328;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .5s, background .5s, height .5s, border-bottom .5s; }
   .navbar i {
     position: relative;
+    transform: translate3d(0, 0, 0);
     display: inline-block;
     margin: 0 auto;
     padding: 14px 16px;
@@ -143,31 +45,48 @@ button {
     height: 60px;
     box-shadow: 0 0 0 30px transparent;
     background: rgba(255, 255, 255, 0.1);
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-transition: box-shadow .6s ease-in-out;
-    -moz-transition: box-shadow .6s ease-in-out;
-    -o-transition: box-shadow .6s ease-in-out;
-    -ms-transition: box-shadow .6s ease-in-out;
     transition: box-shadow .6s ease-in-out; }
-  /* Animate the box-shadow to create the effect */
-  .no-touch .navbar a:hover i,
-  .no-touch .navbar a:active i,
-  .no-touch .navbar a:focus i {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
-    -webkit-transition: box-shadow .4s ease-in-out;
-    -moz-transition: box-shadow .4s ease-in-out;
-    -o-transition: box-shadow .4s ease-in-out;
-    -ms-transition: box-shadow .4s ease-in-out;
-    transition: box-shadow .4s ease-in-out; } }
 
-@media (min-width: 50em) and (max-width: 61.25em) {
-  /* Size and font adjustments to make it fit into the screen*/
-  .navbar ul {
-    font-size: 1.2em; } }
+.navbar li a:hover,
+.navbar li a:active,
+.navbar li a:focus {
+  border-bottom: 4px solid #A73C28; }
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent; }
+
+.no-touch .navbar ul:hover a {
+  color: rgba(249, 249, 249, 0.5); }
+
+.no-touch .navbar ul:hover a:hover {
+  color: rgba(249, 249, 249, 0.99); }
+
+/* Placing the icon */
+.icon {
+  padding-top: 1.4em; }
+
+.icon + span {
+  margin-top: 1.1em;
+  transition: margin .5s; }
+
+/* Making the text follow the height animation */
+.no-touch .navbar a:hover .icon + span {
+  margin-top: 1.5em;
+  transition: margin .5s; }
+
+/* Animate the box-shadow to create the effect */
+.no-touch .navbar a:hover i,
+.no-touch .navbar a:active i,
+.no-touch .navbar a:focus i {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+  transition: box-shadow .4s ease-in-out; }
+
+.main {
+  width: calc(100% - 200px);
+  float: left;
+  height: calc(100% - 64px); }
 
 /* VERTICALLY ALIGN THE DIV */
 /* Border Radius */
