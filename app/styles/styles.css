@@ -51,7 +51,9 @@
 .navbar li a:hover,
 .navbar li a:active,
 .navbar li a:focus {
-  border-bottom: 4px solid #A73C28; }
+  border-bottom: 4px solid #A73C28;
+  background: #E9543B;
+  color: rgba(249, 249, 249, 0.99); }
 
 a,
 button {
@@ -113,8 +115,6 @@ body {
   font-weight: normal; }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .wrapper {
